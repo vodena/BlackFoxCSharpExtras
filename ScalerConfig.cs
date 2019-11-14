@@ -1,16 +1,16 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Text.Json.Serialization;
 
 namespace BlackFoxExtras
 {
     public class ScalerConfig
     {
-        [JsonPropertyName("input")]
+        [JsonProperty("input")]
         public InputOutputConfig Input { get; set; }
 
-        [JsonPropertyName("output")]
+        [JsonProperty("output")]
         public InputOutputConfig Output { get; set; }
     }
 }

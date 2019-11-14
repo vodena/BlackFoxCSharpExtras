@@ -1,19 +1,19 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Text.Json.Serialization;
 
 namespace BlackFoxExtras
 {
     public class InputOutputConfig
     {
-        [JsonPropertyName("feature_range")]
+        [JsonProperty("feature_range")]
         public double[] FeatureRange { get; set; }
 
-        [JsonPropertyName("fit")]
+        [JsonProperty("fit")]
         public double[][] Fit { get; set; }
 
-        [JsonPropertyName("inverse_transform")]
+        [JsonProperty("inverse_transform")]
         public bool InverseTransform { get; set; }
     }
 }
